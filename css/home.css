@@ -362,6 +362,13 @@ transition: 0.2s;
     .ride .container .box p {
       text-align: center;
     }
+    .landing .container .holder {
+      flex-direction: column;
+    }
+    .landing .container .holder div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
 
@@ -833,10 +840,11 @@ rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-top: 200px;
 }
 .landing {
-  padding-bottom: 437px;
+  padding-bottom: 80px;
 }
 .landing .container .land-text .button {
   margin: 15px auto;
+  flex-direction: row;
 }
 .landing .container .land-text p {
   text-align: center;
@@ -855,15 +863,29 @@ rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 
 @media only screen and (max-width:992px) {
-  .landing .container .image {
+  .landing .container .image,
+  .header .button {
     display: none;
 }
-.ride {
-  margin-top: 0px;
+.form-container form {
+  position: relative;
 }
-.header .button {
-  display: flex;
-}
+  .ride {
+    margin-top: 0px;
+  }
+  .landing .container .holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 23px;
+  }
+  .ride .container .box p {
+    text-align: center;
+  }
+  .landing .container .land-text p {
+    max-width: 376px;
+  }
 }
 
 
